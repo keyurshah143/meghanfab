@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Funexpress POM Test Automation">
-	<test name="Funexpress project test">
-		<classes>
-			<class name="com.qa.testcases.Demotestcase"></class>
-			<class name="com.qa.testcases.Demotestcase2"></class>
-		</classes>
-	</test>
-</suite>
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"> -->
+<!-- <suite name="Meghan fab POM Test Automation"> -->
+<!-- 	<test name="Meghan Fab project test"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qa.testcases.Demotestcase"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- </suite> -->
