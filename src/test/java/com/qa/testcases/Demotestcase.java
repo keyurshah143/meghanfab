@@ -15,7 +15,7 @@ public class Demotestcase extends Defaultmethods {
 		obj.openchromebrowser();
 		driver.get("https://www.google.com");
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
