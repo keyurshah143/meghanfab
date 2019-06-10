@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Meghan fab POM Test Automation" duration-ms="19228" started-at="2019-06-10T05:35:01Z" finished-at="2019-06-10T05:35:20Z">
+    <groups>
+    </groups>
+    <test name="Meghan Fab project test" duration-ms="19228" started-at="2019-06-10T05:35:01Z" finished-at="2019-06-10T05:35:20Z">
+      <class name="com.qa.testcases.Demotestcase">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:com.qa.testcases.Demotestcase@6bf256fa]" name="openbrowser" is-config="true" duration-ms="18023" started-at="2019-06-10T11:05:01Z" finished-at="2019-06-10T11:05:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="maximisebrowser()[pri:0, instance:com.qa.testcases.Demotestcase@6bf256fa]" name="maximisebrowser" duration-ms="11" started-at="2019-06-10T11:05:19Z" finished-at="2019-06-10T11:05:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximisebrowser -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.qa.testcases.Demotestcase@6bf256fa]" name="closebrowser" is-config="true" duration-ms="1177" started-at="2019-06-10T11:05:19Z" finished-at="2019-06-10T11:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.qa.testcases.Demotestcase -->
+    </test> <!-- Meghan Fab project test -->
+  </suite> <!-- Meghan fab POM Test Automation -->
+</testng-results>
