@@ -4,6 +4,7 @@
 	<test name="Meghan Fab project test">
 		<classes>
 			<class name="com.qa.testcases.Demotestcase"></class>
+			<class name="com.qa.testcases.Demotestcase2"></class>
 		</classes>
 	</test>
 </suite>
