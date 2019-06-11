@@ -13,10 +13,17 @@ import com.thoughtworks.selenium.webdriven.commands.Click;
 public class TC3_BillingAddress extends Meghanmethods {
 
 	@Test
-	public static void registertestcase() throws Exception {
+	public static void billingaddresstestcase() throws Exception {
 		openchromebrowser();
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
+		addbillingaddress();
+		driver.quit();
+
+	}
+
+	public static void addbillingaddress() throws Exception {
+
 		myaccountpageaddresstablink().click();
 		editbillingaddressbutton().click();
 		billingaddressfirstnametextbox().clear();
@@ -25,16 +32,18 @@ public class TC3_BillingAddress extends Meghanmethods {
 		billingaddresslastnametextbox().sendKeys(testlastname);
 		billingaddresscompanynametextbox().clear();
 		billingaddresscompanynametextbox().sendKeys(testcompanyname);
-//		Select countrydropdown = new Select(billingaddresscountrydropdown());
-//		countrydropdown.selectByVisibleText(testcountryname);
+		billingaddresscountrydropdown().click();
+		billingaddresscountrydropdowntextbox().sendKeys(testcountryname);
+		billingaddresscountrydropdowntextboxselect().click();
 		billingaddressstreetaddresstextbox1().clear();
 		billingaddressstreetaddresstextbox1().sendKeys(teststreetaddress1);
 		billingaddressstreetaddresstextbox2().clear();
 		billingaddressstreetaddresstextbox2().sendKeys(teststreetaddress2);
 		billingaddresstowncitytextbox().clear();
 		billingaddresstowncitytextbox().sendKeys(testcitytown);
-//		Select statedropdown = new Select(billingaddressstatecountydropdown());
-//		statedropdown.selectByVisibleText(teststatecounty);
+		billingaddressstatecountydropdown().click();
+		billingaddressstatecountydropdowntextbox().sendKeys(teststatecounty);
+		billingaddressstatecountydropdowntextboxselect().click();
 		billingaddresspostcodeziptextbox().clear();
 		billingaddresspostcodeziptextbox().sendKeys(testpostcodezip);
 		billingaddressphonetextbox().clear();
@@ -50,8 +59,6 @@ public class TC3_BillingAddress extends Meghanmethods {
 			System.out.println(billingaddressexpectedsuccessmessage());
 
 		}
-
-//		driver.quit();
 
 	}
 
@@ -130,6 +137,34 @@ public class TC3_BillingAddress extends Meghanmethods {
 		return element;
 	}
 
+	public static WebElement billingaddresscountrydropdowntextbox() throws Exception {
+
+		try {
+
+			waitForElementVisible(element);
+			element = driver.findElement(By.xpath("//input[@class='select2-search__field']"));
+
+		} catch (Exception e) {
+			System.out.println("billingaddresscountrydropdowntextbox");
+			throw (e);
+		}
+		return element;
+	}
+
+	public static WebElement billingaddresscountrydropdowntextboxselect() throws Exception {
+
+		try {
+
+			waitForElementVisible(element);
+			element = driver.findElement(By.xpath("/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[1]"));
+
+		} catch (Exception e) {
+			System.out.println("billingaddresscountrydropdowntextboxselect");
+			throw (e);
+		}
+		return element;
+	}
+
 	public static WebElement billingaddressstreetaddresstextbox1() throws Exception {
 
 		try {
@@ -175,6 +210,34 @@ public class TC3_BillingAddress extends Meghanmethods {
 
 		} catch (Exception e) {
 			System.out.println("billingaddressstatecountydropdown");
+			throw (e);
+		}
+		return element;
+	}
+
+	public static WebElement billingaddressstatecountydropdowntextbox() throws Exception {
+
+		try {
+
+			waitForElementVisible(element);
+			element = driver.findElement(By.xpath("//input[@class='select2-search__field']"));
+
+		} catch (Exception e) {
+			System.out.println("billingaddressstatecountydropdowntextbox");
+			throw (e);
+		}
+		return element;
+	}
+
+	public static WebElement billingaddressstatecountydropdowntextboxselect() throws Exception {
+
+		try {
+
+			waitForElementVisible(element);
+			element = driver.findElement(By.xpath("/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[1]"));
+
+		} catch (Exception e) {
+			System.out.println("billingaddressstatecountydropdowntextboxselect");
 			throw (e);
 		}
 		return element;

@@ -14,14 +14,14 @@ public class Defaultvariables {
 	public static WebDriver driver = null;
 
 	public static String testlocalurl = "http://meghanfabulous.local/";
-	public static String testusername = "keyurshah1234";
-	public static String testemailaddress = "keyur.shah+1234@sooryen.com";
-	public static String testpassword = "Sooryen@123";
+	public static String testusername = "keyurshah1234567";
+	public static String testemailaddress = "keyur.shah+1234567@sooryen.com";
+	public static String testpassword = "Sooryen@1234";
 	public static String testnewpassword = "Sooryen@1234";
 	public static String testfirstname = "Keyur";
 	public static String testlastname = "Shah";
 	public static String testcompanyname = "Company Name";
-	public static String testcountryname = "United Arab Emirates";
+	public static String testcountryname = "United States (US)";
 	public static String teststreetaddress1 = "369 Shutter Street";
 	public static String teststreetaddress2 = "Street 2";
 	public static String testcitytown = "California";

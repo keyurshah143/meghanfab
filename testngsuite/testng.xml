@@ -3,8 +3,8 @@
 <suite name="Meghan fab POM Test Automation">
 	<test name="Meghan Fab project test">
 		<classes>
-			<class name="com.qa.testcases.TC1_Login"></class>
 			<class name="com.qa.testcases.TC2_Register"></class>
+			<class name="com.qa.testcases.TC1_Login"></class>
 			<class name="com.qa.testcases.TC3_BillingAddress"></class>
 			<class name="com.qa.testcases.TC4_ShippingAddress"></class>
 			<class name="com.qa.testcases.TC5_AccountDetails"></class>

@@ -13,10 +13,17 @@ import com.thoughtworks.selenium.webdriven.commands.Click;
 public class TC4_ShippingAddress extends Meghanmethods {
 
 	@Test
-	public static void registertestcase() throws Exception {
+	public static void shippingaddresstestcase() throws Exception {
 		openchromebrowser();
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
+		addbillingaddress();
+		driver.quit();
+
+	}
+
+	public static void addbillingaddress() throws Exception {
+
 		myaccountpageaddresstablink().click();
 		editshippingaddressbutton().click();
 		shippingaddressfirstnametextbox().clear();
@@ -25,16 +32,18 @@ public class TC4_ShippingAddress extends Meghanmethods {
 		shippingaddresslastnametextbox().sendKeys(testlastname);
 		shippingaddresscompanynametextbox().clear();
 		shippingaddresscompanynametextbox().sendKeys(testcompanyname);
-//		Select countrydropdown = new Select(shippingaddresscountrydropdown());
-//		countrydropdown.selectByVisibleText(testcountryname);
+		shippingaddresscountrydropdown().click();
+		shippingaddresscountrydropdowntextbox().sendKeys(testcountryname);
+		shippingaddresscountrydropdowntextboxselect().click();
 		shippingaddressstreetaddresstextbox1().clear();
 		shippingaddressstreetaddresstextbox1().sendKeys(teststreetaddress1);
 		shippingaddressstreetaddresstextbox2().clear();
 		shippingaddressstreetaddresstextbox2().sendKeys(teststreetaddress2);
 		shippingaddresstowncitytextbox().clear();
 		shippingaddresstowncitytextbox().sendKeys(testcitytown);
-//		Select statedropdown = new Select(shippingaddressstatecountydropdown());
-//		statedropdown.selectByVisibleText(teststatecounty);
+		shippingaddressstatecountydropdown().click();
+		shippingaddressstatecountydropdowntextbox().sendKeys(teststatecounty);
+		shippingaddressstatecountydropdowntextboxselect().click();
 		shippingaddresspostcodeziptextbox().clear();
 		shippingaddresspostcodeziptextbox().sendKeys(testpostcodezip);
 
@@ -47,8 +56,6 @@ public class TC4_ShippingAddress extends Meghanmethods {
 			System.out.println(shippingaddressexpectedsuccessmessage());
 
 		}
-
-//		driver.quit();
 
 	}
 
@@ -127,6 +134,34 @@ public class TC4_ShippingAddress extends Meghanmethods {
 		return element;
 	}
 
+	public static WebElement shippingaddresscountrydropdowntextbox() throws Exception {
+
+		try {
+
+			waitForElementVisible(element);
+			element = driver.findElement(By.xpath("//input[@class='select2-search__field']"));
+
+		} catch (Exception e) {
+			System.out.println("shippingaddresscountrydropdowntextbox");
+			throw (e);
+		}
+		return element;
+	}
+
+	public static WebElement shippingaddresscountrydropdowntextboxselect() throws Exception {
+
+		try {
+
+			waitForElementVisible(element);
+			element = driver.findElement(By.xpath("/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[1]"));
+
+		} catch (Exception e) {
+			System.out.println("shippingaddresscountrydropdowntextboxselect");
+			throw (e);
+		}
+		return element;
+	}
+
 	public static WebElement shippingaddressstreetaddresstextbox1() throws Exception {
 
 		try {
@@ -172,6 +207,34 @@ public class TC4_ShippingAddress extends Meghanmethods {
 
 		} catch (Exception e) {
 			System.out.println("shippingaddressstatecountydropdown");
+			throw (e);
+		}
+		return element;
+	}
+
+	public static WebElement shippingaddressstatecountydropdowntextbox() throws Exception {
+
+		try {
+
+			waitForElementVisible(element);
+			element = driver.findElement(By.xpath("//input[@class='select2-search__field']"));
+
+		} catch (Exception e) {
+			System.out.println("shippingaddresscountrydropdowntextbox");
+			throw (e);
+		}
+		return element;
+	}
+
+	public static WebElement shippingaddressstatecountydropdowntextboxselect() throws Exception {
+
+		try {
+
+			waitForElementVisible(element);
+			element = driver.findElement(By.xpath("/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[1]"));
+
+		} catch (Exception e) {
+			System.out.println("shippingaddresscountrydropdowntextboxselect");
 			throw (e);
 		}
 		return element;

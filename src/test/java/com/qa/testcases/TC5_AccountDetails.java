@@ -14,10 +14,17 @@ import com.thoughtworks.selenium.webdriven.commands.Click;
 public class TC5_AccountDetails extends Meghanmethods {
 
 	@Test
-	public static void registertestcase() throws Exception {
+	public static void accountdetailstestcase() throws Exception {
 		openchromebrowser();
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
+		accountdetails();
+		driver.quit();
+
+	}
+
+	public static void accountdetails() throws Exception {
+
 		myaccountpageaccountdetailstablink().click();
 		accountdetailsfirstnametextbox().clear();
 		accountdetailsfirstnametextbox().sendKeys(testfirstname);
@@ -43,8 +50,6 @@ public class TC5_AccountDetails extends Meghanmethods {
 			System.out.println(accountdetailsexpectedsuccessmessage());
 
 		}
-
-//		driver.quit();
 
 	}
 

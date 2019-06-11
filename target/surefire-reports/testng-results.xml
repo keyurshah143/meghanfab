@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-11T06:32:44Z" name="Meghan fab POM Test Automation" finished-at="2019-06-11T06:33:23Z" duration-ms="39030">
+  <suite started-at="2019-06-11T09:33:33Z" name="Meghan fab POM Test Automation" finished-at="2019-06-11T09:39:00Z" duration-ms="326297">
     <groups>
     </groups>
-    <test started-at="2019-06-11T06:32:44Z" name="Meghan Fab project test" finished-at="2019-06-11T06:33:23Z" duration-ms="39030">
+    <test started-at="2019-06-11T09:33:33Z" name="Meghan Fab project test" finished-at="2019-06-11T09:39:00Z" duration-ms="326297">
+      <class name="com.qa.testcases.TC5_AccountDetails">
+        <test-method signature="registertestcase()[pri:0, instance:com.qa.testcases.TC5_AccountDetails@1ee807c6]" started-at="2019-06-11T15:07:56Z" name="registertestcase" finished-at="2019-06-11T15:09:00Z" duration-ms="63255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registertestcase -->
+      </class> <!-- com.qa.testcases.TC5_AccountDetails -->
+      <class name="com.qa.testcases.TC2_Register">
+        <test-method signature="registertestcase()[pri:0, instance:com.qa.testcases.TC2_Register@7181ae3f]" started-at="2019-06-11T15:03:33Z" name="registertestcase" finished-at="2019-06-11T15:04:24Z" duration-ms="50793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registertestcase -->
+      </class> <!-- com.qa.testcases.TC2_Register -->
+      <class name="com.qa.testcases.TC3_BillingAddress">
+        <test-method signature="registertestcase()[pri:0, instance:com.qa.testcases.TC3_BillingAddress@1442d7b5]" started-at="2019-06-11T15:05:33Z" name="registertestcase" finished-at="2019-06-11T15:06:54Z" duration-ms="81636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registertestcase -->
+      </class> <!-- com.qa.testcases.TC3_BillingAddress -->
       <class name="com.qa.testcases.TC1_Login">
-        <test-method signature="logintestcase()[pri:0, instance:com.qa.testcases.TC1_Login@543e710e]" started-at="2019-06-11T12:02:44Z" name="logintestcase" finished-at="2019-06-11T12:03:23Z" duration-ms="38999" status="PASS">
+        <test-method signature="logintestcase()[pri:0, instance:com.qa.testcases.TC1_Login@4e4aea35]" started-at="2019-06-11T15:04:24Z" name="logintestcase" finished-at="2019-06-11T15:05:33Z" duration-ms="68307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintestcase -->
       </class> <!-- com.qa.testcases.TC1_Login -->
+      <class name="com.qa.testcases.TC4_ShippingAddress">
+        <test-method signature="registertestcase()[pri:0, instance:com.qa.testcases.TC4_ShippingAddress@1efee8e7]" started-at="2019-06-11T15:06:54Z" name="registertestcase" finished-at="2019-06-11T15:07:56Z" duration-ms="62286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registertestcase -->
+      </class> <!-- com.qa.testcases.TC4_ShippingAddress -->
     </test> <!-- Meghan Fab project test -->
   </suite> <!-- Meghan fab POM Test Automation -->
 </testng-results>

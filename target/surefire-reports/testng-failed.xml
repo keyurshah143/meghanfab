@@ -3,7 +3,11 @@
 <suite name="Failed suite [Meghan fab POM Test Automation]" guice-stage="DEVELOPMENT" verbose="0">
   <test name="Meghan Fab project test">
     <classes>
+      <class name="com.qa.testcases.TC2_Register"/>
       <class name="com.qa.testcases.TC1_Login"/>
+      <class name="com.qa.testcases.TC3_BillingAddress"/>
+      <class name="com.qa.testcases.TC4_ShippingAddress"/>
+      <class name="com.qa.testcases.TC5_AccountDetails"/>
     </classes>
   </test> <!-- Meghan Fab project test -->
 </suite> <!-- Failed suite [Meghan fab POM Test Automation] -->
