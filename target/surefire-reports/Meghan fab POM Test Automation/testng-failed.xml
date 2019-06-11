@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Meghan fab POM Test Automation]">
+<suite name="Failed suite [Meghan fab POM Test Automation]" guice-stage="DEVELOPMENT" verbose="0">
   <test name="Meghan Fab project test">
     <classes>
-      <class name="com.qa.testcases.Demotestcase"/>
+      <class name="com.qa.testcases.TC1_Login"/>
     </classes>
   </test> <!-- Meghan Fab project test -->
 </suite> <!-- Failed suite [Meghan fab POM Test Automation] -->
