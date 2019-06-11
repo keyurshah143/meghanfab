@@ -14,8 +14,8 @@ public class Defaultvariables {
 	public static WebDriver driver = null;
 
 	public static String testlocalurl = "http://meghanfabulous.local/";
-	public static String testusername = "keyurshah123456789";
-	public static String testemailaddress = "keyur.shah+123456789@sooryen.com";
+	public static String testusername = "keyurshah1234567890";
+	public static String testemailaddress = "keyur.shah+1234567890@sooryen.com";
 	public static String testpassword = "Sooryen@1234";
 	public static String testnewpassword = "Sooryen@1234";
 	public static String testfirstname = "Keyur";
@@ -29,5 +29,5 @@ public class Defaultvariables {
 	public static String testpostcodezip = "90012";
 	public static String testphonenumber = "9876543210";
 	public static String testdisplayname = "keyurshah14";
-	
+
 }
