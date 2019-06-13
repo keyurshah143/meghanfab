@@ -1,15 +1,11 @@
 package com.qa.testcases;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.qa.methods.Meghanmethods;
-import com.thoughtworks.selenium.webdriven.commands.Click;
 
 public class TC5_AccountDetails extends Meghanmethods {
 
@@ -19,7 +15,7 @@ public class TC5_AccountDetails extends Meghanmethods {
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
 		accountdetails();
-		driver.quit();
+		closebrowser();
 
 	}
 
@@ -40,7 +36,6 @@ public class TC5_AccountDetails extends Meghanmethods {
 
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
 				accountdetailssavechangesbutton());
-
 		accountdetailssavechangesbutton().click();
 		if (accountdetailsexpectedsuccessmessage().equalsIgnoreCase("Account details changed successfully.")) {
 

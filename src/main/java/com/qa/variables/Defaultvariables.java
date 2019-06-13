@@ -4,8 +4,6 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Defaultvariables {
 	public static WebElement element;
@@ -14,8 +12,8 @@ public class Defaultvariables {
 	public static WebDriver driver = null;
 
 	public static String testlocalurl = "http://meghanfabulous.local/";
-	public static String testusername = "keyurshah1234567890";
-	public static String testemailaddress = "keyur.shah+1234567890@sooryen.com";
+	public static String testusername = "keyurshah21";
+	public static String testemailaddress = "keyur.shah+21@sooryen.com";
 	public static String testpassword = "Sooryen@1234";
 	public static String testnewpassword = "Sooryen@1234";
 	public static String testfirstname = "Keyur";
@@ -29,5 +27,25 @@ public class Defaultvariables {
 	public static String testpostcodezip = "90012";
 	public static String testphonenumber = "9876543210";
 	public static String testdisplayname = "keyurshah14";
+	public static String testproducturl = "http://meghanfabulous.local/product/bali-maxi-dress-peacock/";
+	public static String testinvalidusername = "keyurshah19invalid";
+	public static String testinvalidemailaddress = "keyur.shahinvalid@sooryen.com";
+	public static String testinvalidpassword = "Sooryen@123456789";
+	
+	
+	
+
+	public static String host = "smtp.gmail.com";
+	public static String port = "587";
+	public static String mailFrom = "sooryenqateam@gmail.com";
+	public static String password = "Sooryen@123";
+	public static String mailTo = "keyur.shah@sooryen.com";
+	public static String subject = "New email with attachments";
+	public static String message = "I have some attachments for you.";
+	public static String path = System.getProperty("user.dir");
+	public static String destination = path + "\\ExtentReportHTML\\EberjeyHTMLReport.html";
+	public static String latestmetricsfilename = "Metrics-2019Jun13-";
+	
+	
 
 }

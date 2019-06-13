@@ -1,9 +1,6 @@
 package com.qa.methods;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -26,15 +23,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.BeforeClass;
 import com.qa.variables.Defaultvariables;
 
 public class Defaultmethods extends Defaultvariables {
@@ -54,6 +44,7 @@ public class Defaultmethods extends Defaultvariables {
 	static boolean dateNotFound;
 	public static String excel = "\\Excelsheet\\eberjey.xlsx";
 
+	@BeforeClass
 	public static void openchromebrowser() {
 		try {
 			System.setProperty("webdriver.chrome.driver", path + "\\browsersetup\\chromedriver.exe");
@@ -308,6 +299,65 @@ public class Defaultmethods extends Defaultvariables {
 		try {
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			Thread.sleep(5000);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+	public static void closebrowser() throws Exception {
+		try {
+			driver.quit();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+	public static void closebrowsertab() throws Exception {
+		try {
+			driver.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+//	private static File getLatestFilefromDir() {
+//		File dir = new File(path + "\\target\\surefire-reports");
+//		System.out.println("List of file directory");
+//		File[] files = dir.listFiles();
+//		System.out.println(files);
+//		
+//
+//		if (files == null || files.length == 0) {
+//			return null;
+//		}
+//		List<File> metricFile = new ArrayList<File>();
+//		for (int i = 1; i < files.length; i++) {
+//
+//			if (files[i].getName().startsWith("Metrics")) {
+//				metricFile.add(files[i]);
+//			}
+//
+//		}
+//		File lastModifiedFile = metricFile.get(0);
+//		for (File f : metricFile) {
+//			if (lastModifiedFile.lastModified() < f.lastModified()) {
+//				lastModifiedFile = f;
+//			}
+//		}
+//		return lastModifiedFile;
+//	}
+
+	@AfterSuite
+	public static void sendemailreport() throws Exception {
+		try {
+			String[] attachFiles = new String[1];
+//			File file = getLatestFilefromDir();
+//			System.out.println(file.getAbsolutePath() + "::::::" + file.getName());
+
+			attachFiles[0] = path + "\\test-output\\emailable-report.html";
+			SendMailMethod.sendEmailWithAttachments(host, port, mailFrom, password, mailTo, subject, message,
+					attachFiles);
+
 		} catch (Exception e) {
 			System.out.println(e);
 		}

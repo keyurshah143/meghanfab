@@ -13,7 +13,7 @@ public class TC2_Register extends Meghanmethods {
 		openchromebrowser();
 		driver.get(testlocalurl);
 		registertestuser();
-		driver.quit();
+		closebrowser();
 	}
 
 	public static void registertestuser() throws Exception {
@@ -28,7 +28,7 @@ public class TC2_Register extends Meghanmethods {
 		registerpageregistersubmitbutton().click();
 
 		if (myaccountpagelogoutbuttontext().size() != 0) {
-			
+
 			System.out.println("Registeration was Successful");
 
 		} else {

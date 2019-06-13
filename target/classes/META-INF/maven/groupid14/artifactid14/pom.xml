@@ -25,6 +25,17 @@
 			<version>6.9.10</version>
 			<scope>compile</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.github.adiralashiva8</groupId> -->
+<!-- 			<artifactId>testng-metrics</artifactId> -->
+<!-- 			<version>1.5</version> -->
+<!-- 		</dependency> -->
 	</dependencies>
 	<build>
 		<plugins>
@@ -43,7 +54,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-					<suiteXmlFile>testngsuite/testng.xml</suiteXmlFile>
+						<suiteXmlFile>testngsuite/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

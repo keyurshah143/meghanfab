@@ -1,14 +1,10 @@
 package com.qa.testcases;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.qa.methods.Meghanmethods;
-import com.thoughtworks.selenium.webdriven.commands.Click;
 
 public class TC4_ShippingAddress extends Meghanmethods {
 
@@ -18,7 +14,7 @@ public class TC4_ShippingAddress extends Meghanmethods {
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
 		addbillingaddress();
-		driver.quit();
+		closebrowser();
 
 	}
 
