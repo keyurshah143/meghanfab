@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Meghan fab POM Test Automation]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.qa.externalmethods.CustomTestNGReporter"/>
-  </listeners>
   <test thread-count="5" name="Meghan Fab project test(failed)">
+    <parameter name="browser" value="CRM"/>
     <classes>
       <class name="com.qa.testcases.TC2_Register">
         <methods>
+          <include name="setup"/>
           <include name="sendemailreport"/>
           <include name="registertestcase"/>
         </methods>

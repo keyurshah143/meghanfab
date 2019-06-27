@@ -20,6 +20,16 @@
 			<version>2.53.1</version>
 		</dependency>
 		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>4.0.0-alpha-1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>4.0.0-alpha-1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.10</version>
@@ -31,11 +41,11 @@
 			<artifactId>mail</artifactId>
 			<version>1.4</version>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>com.github.adiralashiva8</groupId> -->
-<!-- 			<artifactId>testng-metrics</artifactId> -->
-<!-- 			<version>1.5</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.github.adiralashiva8</groupId> -->
+		<!-- <artifactId>testng-metrics</artifactId> -->
+		<!-- <version>1.5</version> -->
+		<!-- </dependency> -->
 	</dependencies>
 	<build>
 		<plugins>

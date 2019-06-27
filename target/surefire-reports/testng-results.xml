@@ -1,25 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="6" passed="0" failed="0" skipped="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-13T05:31:33Z" name="Meghan fab POM Test Automation" finished-at="2019-06-13T05:32:14Z" duration-ms="41182">
+  <suite started-at="2019-06-27T09:54:51Z" name="Meghan fab POM Test Automation" finished-at="2019-06-27T09:54:51Z" duration-ms="43">
     <groups>
     </groups>
-    <test started-at="2019-06-13T05:31:33Z" name="Meghan Fab project test" finished-at="2019-06-13T05:32:14Z" duration-ms="41182">
-      <class name="com.qa.testcases.TC1_Login">
-        <test-method is-config="true" signature="openchromebrowser()[pri:0, instance:com.qa.testcases.TC1_Login@1188e820]" started-at="2019-06-13T11:01:33Z" name="openchromebrowser" finished-at="2019-06-13T11:01:44Z" duration-ms="11081" status="PASS">
+    <test started-at="2019-06-27T09:54:51Z" name="Meghan Fab project test" finished-at="2019-06-27T09:54:51Z" duration-ms="43">
+      <class name="com.qa.testcases.TC5_AccountDetails">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testcases.TC5_AccountDetails@27c6e487]" started-at="2019-06-27T15:24:51Z" name="setup" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openchromebrowser -->
-        <test-method signature="login_both_valid_fields_testcase()[pri:1, instance:com.qa.testcases.TC1_Login@1188e820]" started-at="2019-06-13T11:01:44Z" name="login_both_valid_fields_testcase" finished-at="2019-06-13T11:02:14Z" duration-ms="30081" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="accountdetailstestcase()[pri:0, instance:com.qa.testcases.TC5_AccountDetails@27c6e487]" started-at="2019-06-27T15:24:51Z" name="accountdetailstestcase" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_both_valid_fields_testcase -->
-        <test-method is-config="true" signature="sendemailreport()[pri:0, instance:com.qa.testcases.TC1_Login@1188e820]" started-at="2019-06-13T11:02:15Z" name="sendemailreport" finished-at="2019-06-13T11:02:19Z" duration-ms="4777" status="PASS">
+        </test-method> <!-- accountdetailstestcase -->
+      </class> <!-- com.qa.testcases.TC5_AccountDetails -->
+      <class name="com.qa.testcases.TC2_Register">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testcases.TC2_Register@3d3fcdb0]" started-at="2019-06-27T15:24:51Z" name="setup" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method setup but has not been marked @Optional or defined
+in C:\Keyur-Data\Key-Sooryen-Eclipse\meghanfabproject\testngsuite\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method setup but has not been marked @Optional or defined
+in C:\Keyur-Data\Key-Sooryen-Eclipse\meghanfabproject\testngsuite\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registertestcase()[pri:0, instance:com.qa.testcases.TC2_Register@3d3fcdb0]" started-at="2019-06-27T15:24:51Z" name="registertestcase" finished-at="2019-06-27T15:24:51Z" duration-ms="4" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registertestcase -->
+        <test-method is-config="true" signature="sendemailreport()[pri:0, instance:com.qa.testcases.TC2_Register@3d3fcdb0]" started-at="2019-06-27T15:24:51Z" name="sendemailreport" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendemailreport -->
+      </class> <!-- com.qa.testcases.TC2_Register -->
+      <class name="com.qa.testcases.TC3_BillingAddress">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testcases.TC3_BillingAddress@6e38921c]" started-at="2019-06-27T15:24:51Z" name="setup" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="billingaddresstestcase()[pri:0, instance:com.qa.testcases.TC3_BillingAddress@6e38921c]" started-at="2019-06-27T15:24:51Z" name="billingaddresstestcase" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingaddresstestcase -->
+      </class> <!-- com.qa.testcases.TC3_BillingAddress -->
+      <class name="com.qa.testcases.TC7_Forgot_Password">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testcases.TC7_Forgot_Password@49070868]" started-at="2019-06-27T15:24:51Z" name="setup" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login_both_valid_fields_testcase()[pri:1, instance:com.qa.testcases.TC7_Forgot_Password@49070868]" started-at="2019-06-27T15:24:51Z" name="login_both_valid_fields_testcase" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_both_valid_fields_testcase -->
+      </class> <!-- com.qa.testcases.TC7_Forgot_Password -->
+      <class name="com.qa.testcases.TC1_Login">
+        <test-method signature="login_both_valid_fields_testcase()[pri:1, instance:com.qa.testcases.TC1_Login@641147d0]" started-at="2019-06-27T15:24:51Z" name="login_both_valid_fields_testcase" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_both_valid_fields_testcase -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testcases.TC1_Login@641147d0]" started-at="2019-06-27T15:24:51Z" name="setup" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
       </class> <!-- com.qa.testcases.TC1_Login -->
+      <class name="com.qa.testcases.TC4_ShippingAddress">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testcases.TC4_ShippingAddress@64d7f7e0]" started-at="2019-06-27T15:24:51Z" name="setup" finished-at="2019-06-27T15:24:51Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="shippingaddresstestcase()[pri:0, instance:com.qa.testcases.TC4_ShippingAddress@64d7f7e0]" started-at="2019-06-27T15:24:51Z" name="shippingaddresstestcase" finished-at="2019-06-27T15:24:51Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingaddresstestcase -->
+      </class> <!-- com.qa.testcases.TC4_ShippingAddress -->
     </test> <!-- Meghan Fab project test -->
   </suite> <!-- Meghan fab POM Test Automation -->
 </testng-results>

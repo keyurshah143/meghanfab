@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Meghan fab POM Test Automation]" guice-stage="DEVELOPMENT" verbose="0">
-  <listeners>
-    <listener class-name="com.qa.externalmethods.CustomTestNGReporter"/>
-  </listeners>
   <test name="Meghan Fab project test">
     <classes>
+      <class name="com.qa.testcases.TC2_Register"/>
       <class name="com.qa.testcases.TC1_Login"/>
+      <class name="com.qa.testcases.TC3_BillingAddress"/>
+      <class name="com.qa.testcases.TC4_ShippingAddress"/>
+      <class name="com.qa.testcases.TC5_AccountDetails"/>
+      <class name="com.qa.testcases.TC7_Forgot_Password"/>
     </classes>
   </test> <!-- Meghan Fab project test -->
+  <test name="Meghan Fab project test(failed)">
+    <classes>
+      <class name="com.qa.testcases.TC3_BillingAddress">
+        <methods>
+          <include name="billingaddresstestcase"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC3_BillingAddress -->
+      <class name="com.qa.testcases.TC1_Login">
+        <methods>
+          <include name="login_both_valid_fields_testcase"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC1_Login -->
+      <class name="com.qa.testcases.TC4_ShippingAddress">
+        <methods>
+          <include name="shippingaddresstestcase"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC4_ShippingAddress -->
+      <class name="com.qa.testcases.TC2_Register">
+        <methods>
+          <include name="registertestcase"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC2_Register -->
+      <class name="com.qa.testcases.TC5_AccountDetails">
+        <methods>
+          <include name="accountdetailstestcase"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC5_AccountDetails -->
+      <class name="com.qa.testcases.TC7_Forgot_Password">
+        <methods>
+          <include name="login_both_valid_fields_testcase"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC7_Forgot_Password -->
+    </classes>
+  </test> <!-- Meghan Fab project test(failed) -->
 </suite> <!-- Failed suite [Meghan fab POM Test Automation] -->

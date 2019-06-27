@@ -8,11 +8,42 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">39,418</td><td></td><td></td></tr>
+<tr><th colspan="7">Meghan fab POM Test Automation</th></tr>
+<tr><td><a href="#t0">Meghan Fab project test</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">366,378</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testcases.TC7_Forgot_Password</td><td><a href="#m0">login_both_valid_fields_testcase</a></td><td rowspan="1">1560425725032</td><td rowspan="1">28865</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Meghan fab POM Test Automation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Meghan Fab project test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testcases.TC2_Register</td><td><a href="#m0">registertestcase</a></td><td rowspan="1">1561629600829</td><td rowspan="1">81942</td></tr><tr><th colspan="4">Meghan Fab project test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testcases.TC1_Login</td><td><a href="#m1">login_both_valid_fields_testcase</a></td><td rowspan="1">1561629890039</td><td rowspan="1">28901</td></tr><tr class="passedodd"><td rowspan="1">com.qa.testcases.TC3_BillingAddress</td><td><a href="#m2">billingaddresstestcase</a></td><td rowspan="1">1561629692442</td><td rowspan="1">67490</td></tr><tr class="passedeven"><td rowspan="1">com.qa.testcases.TC4_ShippingAddress</td><td><a href="#m3">shippingaddresstestcase</a></td><td rowspan="1">1561629770441</td><td rowspan="1">58273</td></tr><tr class="passedodd"><td rowspan="1">com.qa.testcases.TC5_AccountDetails</td><td><a href="#m4">accountdetailstestcase</a></td><td rowspan="1">1561629838412</td><td rowspan="1">41857</td></tr><tr class="passedeven"><td rowspan="1">com.qa.testcases.TC7_Forgot_Password</td><td><a href="#m5">login_both_valid_fields_testcase</a></td><td rowspan="1">1561629929969</td><td rowspan="1">25907</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.qa.testcases.TC7_Forgot_Password#login_both_valid_fields_testcase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Meghan Fab project test</h2><h3 id="m0">com.qa.testcases.TC2_Register#registertestcase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;reg_password&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-1&apos;, revision: &apos;d1d3728cae&apos;, time: &apos;2019-04-24T13:42:21&apos;
+System info: host: &apos;SIL-WIN-6&apos;, ip: &apos;192.168.1.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\sc\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51793}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: c83365bca6c9e54b6f7c2414a7bfeaec
+*** Element info: {Using=id, value=reg_password}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)
+	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:81)
+	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at com.qa.testcases.TC2_Register.registerpagepasswordtextbox(TC2_Register.java:77)
+	at com.qa.testcases.TC2_Register.registertestuser(TC2_Register.java:27)
+	at com.qa.testcases.TC2_Register.registertestcase(TC2_Register.java:15)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.testcases.TC1_Login#login_both_valid_fields_testcase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.testcases.TC3_BillingAddress#billingaddresstestcase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.testcases.TC4_ShippingAddress#shippingaddresstestcase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.testcases.TC5_AccountDetails#accountdetailstestcase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.testcases.TC7_Forgot_Password#login_both_valid_fields_testcase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

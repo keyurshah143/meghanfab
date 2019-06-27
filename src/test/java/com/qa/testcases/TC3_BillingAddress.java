@@ -10,7 +10,6 @@ public class TC3_BillingAddress extends Meghanmethods {
 
 	@Test
 	public static void billingaddresstestcase() throws Exception {
-		openchromebrowser();
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
 		addbillingaddress();

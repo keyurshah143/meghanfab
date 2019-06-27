@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Meghan fab POM Test Automation">
-	<listeners>
-		<listener
-			class-name="com.qa.externalmethods.CustomTestNGReporter" />
-	</listeners>
+
 	<test name="Meghan Fab project test">
+	<parameter name="browser" value="CRM" />
 		<classes>
 			<class name="com.qa.testcases.TC2_Register"></class>
 			<class name="com.qa.testcases.TC1_Login"></class>
 			<class name="com.qa.testcases.TC3_BillingAddress"></class>
 			<class name="com.qa.testcases.TC4_ShippingAddress"></class>
 			<class name="com.qa.testcases.TC5_AccountDetails"></class>
-<!-- 			<class name="com.qa.testcases.TC6_PlaceOrder"></class> -->
+			<!-- <class name="com.qa.testcases.TC6_PlaceOrder"></class> -->
 			<class name="com.qa.testcases.TC7_Forgot_Password"></class>
 		</classes>
 	</test>

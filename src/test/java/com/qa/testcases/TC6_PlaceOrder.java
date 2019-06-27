@@ -7,7 +7,6 @@ import com.qa.methods.Meghanmethods;
 public class TC6_PlaceOrder extends Meghanmethods {
 	@Test
 	public static void logintestcase() throws Exception {
-		openchromebrowser();
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
 		driver.get(testproducturl);

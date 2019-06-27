@@ -8,16 +8,15 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -25,6 +24,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
 import com.qa.variables.Defaultvariables;
 
 public class Defaultmethods extends Defaultvariables {
@@ -45,26 +46,30 @@ public class Defaultmethods extends Defaultvariables {
 	public static String excel = "\\Excelsheet\\eberjey.xlsx";
 
 	@BeforeClass
-	public static void openchromebrowser() {
-		try {
-			System.setProperty("webdriver.chrome.driver", path + "\\browsersetup\\chromedriver.exe");
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		} catch (Exception e) {
-			System.out.println("openchromebrowser");
-			System.out.println(e);
-		}
-	}
+	@Parameters({ "browser" })
+	public static void setup(String browser) {
+		if (browser.equals("FFX")) {
+			try {
+				System.out.println("Test Starts Running In Firefox Browser.");
+				System.setProperty("webdriver.gecko.driver", path + "//browsersetup//geckodriver.exe");
 
-	public static void openmozillabrowser() {
-		try {
-			driver = new FirefoxDriver();
-			System.setProperty("webdriver.gecko.driver", path + "//browsersetup//geckodriver.exe");
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		} catch (Exception e) {
-			System.out.println(e);
+				driver = new FirefoxDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+		} else if (browser.equals("CRM")) {
+			try {
+				System.out.println("Test Starts Running In Chrome Browser.");
+
+				System.setProperty("webdriver.chrome.driver", path + "//browsersetup//chromedriver.exe");
+				driver = new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+			} catch (Exception e) {
+				System.out.println(e);
+			}
 		}
 	}
 
@@ -96,13 +101,7 @@ public class Defaultmethods extends Defaultvariables {
 		}
 	}
 
-	public static void waitForwElementsVisible(List<WebElement> elements) {
-		try {
-			new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfAllElements(elements));
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
+
 
 	public static class SaveScreenshot {
 		public static void capture(String testCaseName, WebDriver driver) {

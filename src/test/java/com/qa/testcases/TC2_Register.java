@@ -10,10 +10,11 @@ public class TC2_Register extends Meghanmethods {
 
 	@Test
 	public static void registertestcase() throws Exception {
-		openchromebrowser();
+		
 		driver.get(testlocalurl);
 		registertestuser();
 		closebrowser();
+		
 	}
 
 	public static void registertestuser() throws Exception {

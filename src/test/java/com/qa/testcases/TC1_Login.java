@@ -11,8 +11,8 @@ public class TC1_Login extends Meghanmethods {
 	@Test(priority = 1, enabled = true)
 	public static void login_both_valid_fields_testcase() throws Exception {
 		driver.get(testlocalurl);
-		
 		logintestuser();
+		closebrowser();
 	}
 
 	@Test(priority = 2, enabled = false)

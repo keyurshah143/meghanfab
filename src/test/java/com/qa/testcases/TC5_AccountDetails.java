@@ -11,7 +11,6 @@ public class TC5_AccountDetails extends Meghanmethods {
 
 	@Test
 	public static void accountdetailstestcase() throws Exception {
-		openchromebrowser();
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
 		accountdetails();

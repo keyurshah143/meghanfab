@@ -10,7 +10,6 @@ public class TC4_ShippingAddress extends Meghanmethods {
 
 	@Test
 	public static void shippingaddresstestcase() throws Exception {
-		openchromebrowser();
 		driver.get(testlocalurl);
 		TC1_Login.logintestuser();
 		addbillingaddress();
