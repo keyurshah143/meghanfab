@@ -25,8 +25,8 @@ public class TC2_Register extends Meghanmethods {
 		registerpageemailaddresstextbox().sendKeys(testemailaddress);
 		registerpagepasswordtextbox().sendKeys(testpassword);
 		registerpageregistersubmitbutton().click();
-		registerpagepasswordtextbox().sendKeys(testpassword);
-		registerpageregistersubmitbutton().click();
+//		registerpagepasswordtextbox().sendKeys(testpassword);
+//		registerpageregistersubmitbutton().click();
 
 		if (myaccountpagelogoutbuttontext().size() != 0) {
 
